@@ -1,9 +1,5 @@
 <?php
 
-/*
-Теперь её можно пройти заново. Для этого используйте команду /restart_intro или /restart_onboarding - чтобы начать с калибровки. Но также можно приобрести Премиум доступ и продолжить прохождение истории. 
-*/
-
 require_once 'functions.php';
 require_once 'config.php';
 if (!class_exists('Database')) {
