@@ -1052,11 +1052,7 @@ $this->sendMessage($chat_id, $msg, ["parse_mode"=>"HTML"] );
 
                     break;                      
                                                     
-//height
-//is_numeric weight
-//goal_steps
-//goal_water
-//goal_calories
+
                     
                 }
             break;
@@ -1068,47 +1064,4 @@ $this->sendMessage($chat_id, $msg, ["parse_mode"=>"HTML"] );
 
 
 
-
-
-//$chat_id = 6830621933; //Чат со мной
-
-//$b = new Bot($config['tracker_bot']['token'], $config['tracker_bot']['name']);
-
-
-//if($b->user->is_registered($chat_id, 'tracker')) {
-    //echo 3;
-//}
-
-/*$b->user->create_user($chat_id);*/
-
-
-//$b->handleCommands($config['tracker_bot']['name'],$chat_id, "привет");
-//$b->deleteCommands();
-//$res = $b->setChatMenu($chat_id, "commands");
-//echo serialize($res);
-
-/*
-$b->engine->getFirstMission(1);
-echo $b->engine->getError();*/
-
-
-
-/*
-$cms = [
-    [
-        'command' => 'start',
-        'description' => 'Запустить бота'
-    ],
-    [
-        'command' => 'help',
-        'description' => 'Помощь'
-    ],
-    [
-        'command' => 'settings',
-        'description' => 'Настройки'
-    ]
-];
-
-$res = $b->setCommands($cms);
-echo serialize($res);*/
 ?>
