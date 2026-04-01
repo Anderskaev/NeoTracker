@@ -704,78 +704,9 @@ function printDialogue($gd){
     echo $gd['dialogue']['speaker_bot']." ".$gd['dialogue']['text'];
     foreach($gd['options'] as $opt) {
         echo "<br/><a href='?command=select&opt_id=".$opt['id']."'>".$opt['title']."=>".$opt['text']."</a>";
-        //echo serialize($opt);
+     
     }
 }
 
-/*
-
-$telegram_id = 123123;
-$command = "activity";
-$e = new Engine();
-//$e -> startStory($telegram_id, 1); //Только 1 раз за историю 
-echo $e->getError(); 
-
-if(isset($_GET['opt_id'])) {
-    $opt_id = $_GET['opt_id'];
-}
-
-if(isset($_GET['command'])) {
-    $command = $_GET['command'];
-}
-
-switch ($command) {
-    case 'start':
-        //Когда в бот приходит start
-        $e -> startStory($telegram_id, 1); //Только 1 раз за историю
-        echo '<a href="?command=activity">Играть</a>'; 
-    break;
-    case 'activity':
-//Когда вводят данные
-        $chk = $e -> check($telegram_id, 'activity');
-        if($chk>0) {
-            $gd = $e->getDialogue($chk);
-            printDialogue($gd);
-        } else {
-        //Предложить повторить последний диалог
-        echo "<a href='?command=show_last'>Повторить последний диалог</a>";
-        //проверять current_progress - вообще есть ли что-то выполнять, или это в check делать?
-        //накрайняк, можт глюк, но пока не надо
-        }
-    break;
-    case 'show_last':
-        //ВОТ ЗАЧЕМ в current_progress статус!!!
-        $cs = $e->getCurrentStatus($telegram_id);
-        if($cs == 'story_complete') {
-            echo 'Story complete <a href="?command=start">Начать заново</a>';
-        } else if ($cs == 'mission_complete') {
-            echo 'Mission complete <a href="?command=start">Начать заново</a>';  
-        } else {
-            $id = $e->getCurrentDialogueId($telegram_id);
-            $gd = $e->getDialogue($id);
-            printDialogue($gd);
-        }
-
-    break;
-    case 'select':
-
-
-        $dialogue_option = $e->getDialogueOptionByID( $opt_id);
-       // echo serialize($dialogue_option);
-
-        $gd = $e->setDialogueOption($telegram_id, 1, $dialogue_option, 1, 1);
-        if($gd == 'mission_complete') {
-            echo "Mission complete. <a href='?command=start'>Начать заново</a>";
-        } else if ($gd == 'story_complete') {
-            echo "Story complete. Congratulation! ".'<a href="?command=start">Начать заново</a>';  
-        } else if ($gd != -1){
-            printDialogue($gd);
-        } else {
-            echo "Ошибка";
-        }
-        
-    break;
-
-}*/
 
 ?>
