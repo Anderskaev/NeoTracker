@@ -96,6 +96,7 @@ The project originally started as a monolithic structure and was later improved:
 ## 🎥 Demo
 
 (Optional: add video link)
+![Загрузка](https://github.com/Anderskaev/NeoTracker/blob/main/demo/loading.jpg)
 
 ---
 
