@@ -89,13 +89,6 @@ The project originally started as a monolithic structure and was later improved:
 
 ## 📸 Screenshots
 
-(Add screenshots of WebApp here)
-
----
-
-## 🎥 Demo
-
-(Optional: add video link)
 ![Загрузка](https://github.com/Anderskaev/NeoTracker/blob/main/demo/loading.jpg)
 ![Главная](https://github.com/Anderskaev/NeoTracker/blob/main/demo/main.jpg)
 ![График активности](https://github.com/Anderskaev/NeoTracker/blob/main/demo/graph.jpg)
