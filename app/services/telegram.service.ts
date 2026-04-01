@@ -58,7 +58,7 @@ export class TelegramService {
     if (environment.production) {
       return this.tg.initData;
     } else {
-      return "query_id=AAHtBCMXAwAAAO0EIxeGZfVT&user=%7B%22id%22%3A6830621933%2C%22first_name%22%3A%22Vlad%22%2C%22last_name%22%3A%22Anderskaev%22%2C%22username%22%3A%22Anderskaev%22%2C%22language_code%22%3A%22en%22%2C%22is_premium%22%3Atrue%2C%22allows_write_to_pm%22%3Atrue%7D&auth_date=1730543500&hash=c5c6e09de644e2d8e9a5005a3707a7512d029388d8d0b42023818c99c33f32df";
+      return "";
     }
 
   }
@@ -123,28 +123,5 @@ export class TelegramService {
   version() {
     return this.tg.version;
   }
-  //Оставлю тут на крайний
-  //npm i ctypto-js --save
-  //Но тут глюк - это же фронтэнд
-  /*validateInitData(initData, botToken) {
-    const urlSearchParams = new URLSearchParams(initData);
-    const data = Object.fromEntries(urlSearchParams);
-
-    const checkString = Object.keys(data)
-      .filter(key => key !== 'hash')
-      .map(key => `${key}=${data[key]}`)
-      .sort()
-      .join('\n')
-
-    const secretKey = Crypto.createHmac('sha256','WebAppData')
-      .update(botToken)
-      .digest()
-
-    const signature = Crypto.createHmac('sha256', secretKey)
-      .update(checkString)
-      .digest('hex');
-
-      return data['hash'] === signature;
-  }*/
 
 }
