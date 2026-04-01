@@ -1,0 +1,26 @@
+<div class="container-center">
+  <div class="container">
+  <pre class="fig">
+ _   _         _______             _
+| \ | |       |__   __|           | |
+|  \| | ___  ___ | |_ __ __ _  ___| | _____ _ __
+| . ` |/ _ \/ _ \| | '__/ _` |/ __| |/ / _ \ '__|
+| |\  |  __/ (_) | | | | (_| | (__|   &lt;  __/ |
+|_| \_|\___|\___/|_|_|  \__,_|\___|_|\_\___|_|
+                                          v. 1.3.{{test}}
+  </pre>
+
+  <div class="flex align-items-center gap-3 mb-3">
+    <label for="pass" class="font-semibold w-6rem">Пароль </label>
+    <input inputId="pass" type="password" [(ngModel)]="pass" name="pass"/>
+  </div>
+
+  <div class="console-buttons">
+    <button (click)="login()">Войти</button>
+    <button (click)="this.telegram.close();">Закрыть</button>
+  </div>
+
+  </div>
+</div>
+
+

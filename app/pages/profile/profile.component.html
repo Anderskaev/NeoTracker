@@ -1,0 +1,159 @@
+<div class="container-center">
+<div class="container">
+  <div class='hologram'>NEOTRACKER v. 1.3<div>[user 4471]</div></div>
+
+<div class="grid flex p-0 m-0">
+  <div class="col-1 flex vertical-align-middle justify-content-center align-content-center">
+    <span class="material-symbols-rounded m-0" style="align-self: center" [routerLink]="['/main']">arrow_back_ios_new</span>
+    <span class="material-symbols-rounded" style="display: block; align-self: center; font-size: 40px;" [routerLink]="['/main']">home</span>
+  </div>
+  <div class="col-10 vertical-align-middle text-center flex justify-content-center">
+    <div class="nested-grid">
+      <div class="col-12"><h2>Профиль</h2></div>
+    </div>
+  </div>
+  <div class="col-1 vertical-align-middle justify-content-center align-content-center"></div>
+</div>
+
+<div class="settings">
+
+  <div class="flex grid text">
+    <div class="col-4 flex align-items-center"><!-- UTC col3+col9 -->
+      <label for="utc">
+        Пол:
+      </label>
+    </div>
+    <div class="col-8  flex align-items-center">
+      <p-dropdown
+      [(ngModel)]="gender"
+      class="w-full"
+      [options]="genders"
+      inputId="utc"
+      optionLabel="name"
+      optionValue="code"
+      placeholder="Пол" />
+    </div>   <!-- UTC col3+col9 -->
+  </div> <!-- grid -->
+
+  <div class="flex grid text">
+    <div class="col-4 flex align-items-center"><!-- UTC col3+col9 -->
+      <label for="utc">
+        Возраст:
+      </label>
+    </div>
+    <div class="col-8  flex align-items-center">
+      <p-inputNumber
+      [(ngModel)]="age"
+      inputId="age"
+      min="0"
+      max="122"
+      />
+    </div>   <!-- UTC col3+col9 -->
+  </div> <!-- grid -->
+
+  <div class="flex grid text">
+    <div class="col-4 flex align-items-center"><!-- UTC col3+col9 -->
+      <label for="utc">
+        Рост:
+      </label>
+    </div>
+    <div class="col-8  flex align-items-center">
+      <p-inputNumber
+      [(ngModel)]="height"
+      inputId="height"
+      min="0"
+      max="250"
+      />
+    </div>   <!-- UTC col3+col9 -->
+  </div> <!-- grid -->
+
+  <div class="flex grid text">
+    <div class="col-4 flex align-items-center"><!-- UTC col3+col9 -->
+      <label for="weight">
+        Вес:
+      </label>
+    </div>
+    <div class="col-8  flex align-items-center">
+      <p-inputNumber
+      [(ngModel)]="weight"
+      inputId="weight"
+      min="0"
+      max="727"
+      mode="decimal"
+      [minFractionDigits]="2"
+      [maxFractionDigits]="2"
+      />
+    </div>   <!-- UTC col3+col9 -->
+  </div> <!-- grid -->
+
+  <div class="flex grid text">
+    <div class="col-4 flex align-items-center"><!-- UTC col3+col9 -->
+      <label for="utc">
+        Цель по шагам:
+      </label>
+    </div>
+    <div class="col-8  flex align-items-center">
+      <p-inputNumber
+      [(ngModel)]="goal_steps"
+      inputId="height"
+      min="0"
+      max=""
+      />
+    </div>   <!-- UTC col3+col9 -->
+  </div> <!-- grid -->
+
+  <div class="flex grid text">
+    <div class="col-4 flex align-items-center"><!-- UTC col3+col9 -->
+      <label for="utc">
+        Цель по гидрации:
+      </label>
+    </div>
+    <div class="col-8  flex align-items-center">
+      <p-inputNumber
+      [(ngModel)]="goal_water"
+      inputId="height"
+      min="0"
+      max=""
+      />
+    </div>   <!-- UTC col3+col9 -->
+  </div> <!-- grid -->
+
+  <div class="flex grid text">
+    <div class="col-4 flex align-items-center"><!-- UTC col3+col9 -->
+      <label for="utc">
+        Цель по калориям:
+      </label>
+    </div>
+    <div class="col-8  flex align-items-center">
+      <p-inputNumber
+      [(ngModel)]="goal_calories"
+      inputId="height"
+      min="0"
+      max=""
+      />
+    </div>   <!-- UTC col3+col9 -->
+  </div> <!-- grid -->
+
+</div> <!-- div settings ⏰ -->
+
+<br/>
+
+<!--
+<div *ngIf="premium == 0">
+  <button
+    class="premium-button"
+    [routerLink]="['/buy']">⭐️ Приобрести Premium-доступ</button>
+  <br/>
+</div>
+-->
+
+<div class="console-buttons">
+  <button (click)="saveProfile()">Сохранить</button>
+  <button class="back-button" [routerLink]="['/main']">Назад</button>
+</div>
+
+
+
+</div>
+
+</div>

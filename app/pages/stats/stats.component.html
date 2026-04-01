@@ -1,0 +1,42 @@
+
+
+<div class="container">
+  <div class='hologram'>NEOTRACKER v. 1.3<div>[user 4471]</div></div>
+
+<div class="grid flex p-0 m-0">
+  <div class="col-1 flex vertical-align-middle justify-content-center align-content-center">
+    <span class="material-symbols-rounded m-0" style="align-self: center" [routerLink]="['/main']">arrow_back_ios_new</span>
+    <span class="material-symbols-rounded" style="display: block; align-self: center; font-size: 40px;" [routerLink]="['/main']">home</span>
+  </div>
+  <div class="col-10 vertical-align-middle text-center flex justify-content-center">
+    <div class="nested-grid">
+      <div class="col-12"><h2>Статистика</h2></div>
+    </div>
+  </div>
+  <div class="col-1 vertical-align-middle justify-content-center align-content-center"></div>
+</div>
+
+
+<div style="align-self: center">
+<p-selectButton
+[options]="graphTypes"
+[(ngModel)]="graphType"
+[multiple]="false"
+optionLabel="name"
+optionValue="value"
+(click)="changeValues();"
+/>
+</div>
+
+  <p-chart class="console" type="line" [data]="stepsGraphData" [options]="Options" [height]="'15%'"/>
+  <br/>
+  <p-chart class="console" type="line" [data]="waterGraphData" [options]="Options" [height]="'15%'"/>
+  <br/>
+  <p-chart class="console" type="line" [data]="calGraphData" [options]="Options" [height]="'15%'"/>
+
+<br/>
+  <div class="console-buttons">
+    <button class="back-button" [routerLink]="['/main']">Назад</button>
+  </div>
+
+</div>
