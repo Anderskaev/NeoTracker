@@ -57,14 +57,8 @@ export class DataService {
     const update = {
       'initData': initData,
       'message': {
-        /*from: {
-          id: 6830621933 // ID пользователя (должен браться из initData!)
-        },
-        chat: {
-          id: 6830621933 // ID чата
-        },*/
         text: cmd,
-        bot_name: name, //alexns, tracker, maks
+        bot_name: name,
         date: Math.floor(Date.now() / 1000)
       }
     };
