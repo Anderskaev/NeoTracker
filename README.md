@@ -7,7 +7,7 @@ Users complete daily tasks, unlock missions, and progress through a branching na
 
 ## 🔥 Key Features
 
-- Habit tracking system (steps, water, calories, etc.)
+- Habit tracking system (steps, water, calories)
 - Mission-based progression
 - Branching storyline with choices
 - Telegram Bot integration
@@ -24,9 +24,9 @@ The system consists of three main parts:
 - **Backend API (PHP)** — business logic and data processing
 - **WebApp (Angular)** — user interface
 
-Flow:
-Telegram Bot → PHP API → MySQL
-WebApp (Angular) → PHP API → MySQL
+**Flow:**
+- Telegram Bot → PHP API → MySQL
+- WebApp (Angular) → PHP API → MySQL
 
 
 ---
@@ -83,7 +83,6 @@ The project originally started as a monolithic structure and was later improved:
 
 - Demo mode for easier onboarding
 - Improved UI/UX
-- Migration to modern backend framework (Laravel / Node.js)
 - Better test coverage
 
 ---
@@ -102,5 +101,5 @@ The project originally started as a monolithic structure and was later improved:
 
 ## 📬 Contact
 
-- Email: your_email
-- Telegram: your_username
+- Email: v.anderskaev@gmail.com
+- Telegram: @Anderskaev
