@@ -87,6 +87,11 @@ The project originally started as a monolithic structure and was later improved:
 
 ---
 
+## Deployed
+
+https://t.me/nt_neotrack_bot
+---
+
 ## 📸 Screenshots
 
 ![Загрузка](https://github.com/Anderskaev/NeoTracker/blob/main/demo/loading.jpg)
