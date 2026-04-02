@@ -87,7 +87,7 @@ The project originally started as a monolithic structure and was later improved:
 
 ---
 
-## Deployed
+## ⚙️ Deployed
 
 https://t.me/nt_neotrack_bot
 ---
